@@ -12,6 +12,6 @@ docker push vivek170161/multi-worker:$SHA
 
 kubectl apply -f k8s
 
-kubectl set image deployements/client-deployment client=vivek170161/multi-client:$SHA
-kubectl set image deployements/server-deployment server=vivek170161/multi-server:$SHA
-kubectl set image deployements/worker-deployment worker=vivek170161/multi-worker:$SHA
+kubectl set image deployments/client-deployment client=vivek170161/multi-client:$SHA
+kubectl set image deployments/server-deployment server=vivek170161/multi-server:$SHA
+kubectl set image deployments/worker-deployment worker=vivek170161/multi-worker:$SHA
